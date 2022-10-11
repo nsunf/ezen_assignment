@@ -1,0 +1,84 @@
+:root {
+  --main-color: #2DB400;
+}
+
+body {
+  background: rgb(245, 244, 247);
+}
+
+.wrap {
+  width: 480px;
+  margin: 0 auto;
+}
+
+/* header */
+
+.header {
+
+}
+
+.header__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__logo--text {
+}
+
+.header__logo--text>a {
+  color: var(--main-color);
+
+  font-weight: 900;
+  text-decoration: none;
+}
+
+/* body */
+
+.login__section {
+}
+
+.section__label {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.section__wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.section__input-box {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  padding: 0 12px;
+
+  border: 1px solid lightgray;
+
+  background: white;
+}
+
+.section__input-box--input {
+  flex-grow: 1;
+
+  padding: 8px;
+
+  border: none;
+
+  cursor: pointer;
+}
+
+.section__input-box--input:focus {
+  outline: none;
+}
+
+.section__input-box--address {
+  color: gray;
+  font-weight: 100;
+}
+
+.section__input-box--image>img {
+  width: 24px;
+  height: 24px;
+}

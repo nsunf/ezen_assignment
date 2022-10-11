@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
+.logo img {
+  border: 1px solid red;
+}
+
+.login_menu {
+  border: 1px solid orange;
+}
+
+#global_aside a {
+  border: 1px solid yellow;
+}
+
+.column_1 .header {
+  border: 1px solid green;
+}
+
+#detail_list ul:nth-of-type(2) li:nth-child(3) {
+  border: 1px solid blue;
+}
+
+#detail_list>p:last-child:hover {
+  cursor: pointer;
+  color: white;
+  background: red;
+}
