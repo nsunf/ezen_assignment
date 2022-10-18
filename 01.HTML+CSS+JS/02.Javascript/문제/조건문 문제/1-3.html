@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    const grade = Number(prompt("학년"));
+    const score = Number(prompt("점수"));
+
+    if (score < 0 || score > 100) {
+      alert("입력값 에러");
+    } else {
+      if (grade === 4)
+        console.log(score >= 70 ? "합격" : "불합격");
+      else
+        console.log(score >= 60 ? "합격" : "불합격");
+    }
+  </script>
+</body>
+</html>

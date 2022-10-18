@@ -15,13 +15,24 @@
     </div>
     <div class="header__search-bar">search bar</div>
     <div class="header__side header__side--right">
+      <div class="header__search-button header__mobile">search</div>
       <div class="header__preference">pref</div>
       <div class="header__login">login</div>
     </div>
   </header>
   <aside class="aside">
     <ul class="nav">
-      <li class="nav__category">
+      <li class="nav__small">
+        <ul class="nav__small--list">
+          <li class="list__item">홈</li>
+          <li class="list__item">탐색</li>
+          <li class="list__item">Shorts</li>
+          <li class="list__item">구독</li>
+          <li class="list__item">보관함</li>
+          <li class="list__item">시청 기록</li>
+        </ul>
+      </li>
+      <li class="nav__category nav__large">
         <ul class="nav__category--list">
           <li class="list__item">홈</li>
           <li class="list__item">탐색</li>
@@ -29,16 +40,16 @@
           <li class="list__item">구독</li>
         </ul>
       </li>
-      <li class="nav__category">
+      <li class="nav__category nav__large">
         <ul class="nav__category--list">
           <li class="list__item">보관함</li>
           <li class="list__item">시청 기록</li>
         </ul>
       </li>
-      <li class="nav__login">
+      <li class="nav__login nav__large">
         로그인
       </li>
-      <li class="nav__explore">
+      <li class="nav__explore nav__large">
         <div class="nav__explore--text">탐색</div>
         <ul class="nav__explore--list">
           <li class="list__item">음악</li>
@@ -49,10 +60,10 @@
           <li class="list__item">360동영상</li>
         </ul>
       </li>
-      <li class="nav__channel-explore">
+      <li class="nav__channel-explore nav__large">
         채널 탐색
       </li>
-      <li class="nav__more">
+      <li class="nav__more nav__large">
         <div class="nav__more--text"></div>
         <ul class="nav__more--list">
           <li class="list__item">YouTube Preminum</li>
@@ -61,7 +72,7 @@
           <li class="list__item">YouTube TV</li>
         </ul>
       </li>
-      <li class="nav__etc">
+      <li class="nav__etc nav__large">
         <ul class="nav__etc--list">
           <li class="list__item">설정</li>
           <li class="list__item">신고 기록</li>
@@ -69,7 +80,7 @@
           <li class="list__item">의견 보내기</li>
         </ul>
       </li>
-      <li class="nav__footer">
+      <li class="nav__footer nav__large">
         footer
       </li>
     </ul>
@@ -77,19 +88,16 @@
   <main class="main">
     <div class="main__nav">
       <div class="nav__container">
-        <div class="nav__explore">탐색</div>
-        <div class="nav__category">
-          <ul>
-            <li>전체</li>
-            <li>실시간</li>
-            <li>게임</li>
-            <li>음악</li>
-            <li>야구</li>
-            <li>요리</li>
-            <li>축구</li>
-            <li>최근에 업로드된 동영상</li>
-          </ul>
-        </div>
+        <ul>
+          <li>전체</li>
+          <li>실시간</li>
+          <li>게임</li>
+          <li>음악</li>
+          <li>야구</li>
+          <li>요리</li>
+          <li>축구</li>
+          <li>최근에 업로드된 동영상</li>
+        </ul>
       </div>
     </div>
     <div class="section-wrap">
