@@ -15,10 +15,8 @@
         const str = prompt("숫자를 입력하시오");
         const result = [];  //const는 상수지만 배열에서 push는 가능하다.
         
-        const strArr = str.split('');
-
-        for (let i = 0; i < strArr.length; i++) {
-            const num = Number(strArr[i]);
+        for (let i = 0; i < str.length; i++) {
+            const num = Number(str[i]);
             if (num % 2 === 0)
                 result.push('-');
             result.push(num);

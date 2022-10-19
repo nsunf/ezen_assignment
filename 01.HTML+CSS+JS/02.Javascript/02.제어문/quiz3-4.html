@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <script>
+      // 변수를 선언합니다.
+      let output = "";
+
+      // 이중 for문 작성
+      /* 
+      4|1|4
+      3|3|3
+      2|5|2
+      1|7|1
+
+      0|9|0
+
+      1|7|1
+      2|5|2
+      3|3|3
+      4|1|4
+      */
+
+      let reverse = false;
+
+      for (let i = 1; i <= 5; i++) {
+        let space = "";
+        let star = "";
+        const spaceCondition = reverse ? i : 5 - i;
+        const starCondition = reverse ? 9 - i * 2 : i * 2 - 1;
+
+        for (let j = 0; j < spaceCondition; j++) {
+          space += " "
+        }
+        for (let k = 0; k < starCondition; k++) {
+          star += "*";
+        }
+
+        output += space + star + space;
+        output += "\n";
+
+        if (i === 5 && !reverse) {
+          reverse = true;
+          i = 0;
+        } else if (i === 4 && reverse) {
+          break;
+        }
+      }
+
+      // 출력합니다.
+      console.log(output);
+    </script>
+  </head>
+  <body></body>
+</html>
