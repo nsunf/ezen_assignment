@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <script>
+      let numOfLines = Number(prompt('숫자 입력(홀수 만 가능)', 1));
+      numOfLines = numOfLines % 2 === 0 ? numOfLines + 1 : numOfLines;
+      // 변수를 선언합니다.
+      let output = "";
+
+      // 이중 for문 작성
+      /* 
+      4|1|4
+      3|3|3
+      2|5|2
+      1|7|1
+
+      0|9|0
+
+      1|7|1
+      2|5|2
+      3|3|3
+      4|1|4
+      */
+
+      const halfLine = Math.floor(numOfLines / 2);
+
+      for (let i = -halfLine; i <= halfLine; i++) {
+        let space = "";
+        let star = "";
+
+        for (let m = 0; m < Math.abs(i); m++) {
+          space += " ";
+        }
+        for (let n = 0; n < numOfLines - (Math.abs(i) * 2); n++) {
+          star += "*";
+        }
+
+        output += space + star + space + '\n';
+      }
+
+      // 출력합니다.
+      console.log(output);
+    </script>
+  </head>
+  <body></body>
+</html>

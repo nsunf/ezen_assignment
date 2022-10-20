@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function sumBetween(a, b) {
+      const _m = Math.max(a, b);
+      const _n = Math.min(a, b);
+
+      let result = 0;
+      for (let i = a; i <= b; i++) 
+        result += i;
+
+      return result;
+    }
+
+    console.log(sumBetween(9, 5));
+  </script>
+</body>
+</html>
